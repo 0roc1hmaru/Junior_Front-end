@@ -1,0 +1,38 @@
+.frame {
+    background-image: url(../image/animation/fighter.png);
+    width: 70px;
+    height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: walk-east 2s steps(13);
+    animation: walk-east 2s steps(13);
+    position: fixed;
+    z-index: 3000;
+}
+
+@-webkit-keyframes walk-east {
+    from {
+        background-position: 0px 0px;
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    to {
+        background-position: -910px 0px;
+        -webkit-transform: translate(90vw, 100vh) rotate(359deg);
+        transform: translate(90vw, 100vh) rotate(359deg);
+    }
+}
+
+@keyframes walk-east {
+    from {
+        background-position: 0px 0px;
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    to {
+        background-position: -910px 0px;
+        -webkit-transform: translate(90vw, 100vh) rotate(359deg);
+        transform: translate(90vw, 100vh) rotate(359deg);
+    }
+}

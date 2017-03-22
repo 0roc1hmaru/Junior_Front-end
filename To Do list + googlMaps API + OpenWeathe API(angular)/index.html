@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RoutingApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Routing angular</title>
+
+    <script src="script/angular.min.js"></script>
+    <script src="script/angular-ui-router.min.js"></script>
+    <script src="script/jquery-1.12.1.min.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/routing/routing.js"></script>
+    <script src="script/videoTreiler.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvUH1q3tNm-ntLp3WWHJ2cA5P6lhtyi-I"></script>
+
+    <script src="script/controllers/controller.js"></script>
+    <script src="script/controllers/clockCtrl.js"></script>
+    <script src="script/controllers/formsCtrl.js"></script>
+    <script src="script/controllers/MapCtrl.js"></script>
+
+    <script src="script/servise/mapService.js"></script>
+    <script src="script/servise/clockService.js"></script>
+
+</head>
+
+<body ng-controller="RoutCtrl">
+
+    <header class="nav">
+        <nav class="nav">
+            <a ui-sref="home" class="btn tab">Home</a>
+            <a ui-sref="video" class="btn tab">Video</a>
+            <a ui-sref="todo" class="btn tab">Add comment</a>
+        </nav>
+    </header>
+    <section class="content">
+        <div ui-view></div>
+    </section>
+
+</body>
+
+</html>

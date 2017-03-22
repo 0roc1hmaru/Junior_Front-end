@@ -1,0 +1,272 @@
+body {
+    background-color: darkgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tab {
+    height: 40px;
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: aliceblue;
+}
+
+.content {
+    /*  display: flex;*/
+    /* justify-content: space-between;*/
+    margin-top: 20px;
+    width: 100%;
+    /* padding: 0 20px;*/
+}
+
+.tab-body {
+    width: 80%;
+    border: 2px solid black;
+}
+
+.leff-tab {
+    width: 40%;
+}
+
+.container-tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+`.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.form-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.right {
+    width: 50%;
+    position: relative;
+}
+
+.btn-sent {
+    margin-top: 10px;
+}
+
+.view {
+    display: flex;
+}
+
+.to-do-list {
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid black;
+    position: relative;
+    margin-left: 5px;
+}
+
+.write-view {
+    width: 90%;
+    padding: 5px 10px;
+}
+
+.time-to-task {
+    resize: none;
+}
+
+.view-task {
+    display: flex;
+    text-align: left;
+    margin: 10px 20px 35px;
+    border: 1px solid black;
+    position: relative;
+    background-color: beige;
+}
+
+.text-info {
+    margin: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    /*  display: flex;
+    flex-direction: column;*/
+}
+
+.text-info p {
+    margin: 0 0 10px;
+}
+
+.cheked-pos {
+    position: absolute;
+    width: 30px;
+    top: 4px;
+    right: 4px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.date-opt {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.task-info {
+    font-size: 14px;
+}
+
+.mail-opt {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.remove {
+    /* position: relative;*/
+    left: 25px;
+    bottom: -75px;
+    opacity: 1;
+    margin-right: 20px;
+}
+
+.cheked-pos:focus + .remove {
+    opacity: 1;
+}
+
+.wrapper {
+    position: fixed;
+    top: 15%;
+    width: 50%;
+    right: 0;
+}
+
+.done-true {
+    opacity: 0.2;
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.filter-btn {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.filter-search {
+    padding: 0 10px;
+    width: inherit;
+}
+
+form * {
+    font-weight: bold;
+}
+
+.bg-image {
+    background-image: url(../15626-NTJkYzkyNTgxNQ.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    /*height: 830px;*/
+    background-size: cover;
+    padding: 0;
+}
+
+.more-films {
+    font-weight: bold;
+    color: white;
+}
+
+.frameOpt {
+    height: 500px;
+}
+
+.posters-wrapper img {
+    margin-bottom: 10px;
+}
+
+.posters-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 990px;
+    margin: auto;
+}
+
+.mini-navbar-dark {
+    display: none;
+}
+
+.global-map {
+    top: 0;
+}
+
+.buttons-opt {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+@media(max-width:991px) {
+    .posters-wrapper {
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media(max-width:767px) {
+    .view {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .right {
+        width: 100%;
+    }
+    .to-do-list {
+        width: 95%;
+    }
+    .wrapper {
+        position: relative;
+        width: 97%;
+        top: 0;
+    }
+    .remove {
+        position: fixed;
+        right: -40px;
+        top: 15%;
+        bottom: inherit;
+        left: inherit;
+        transform: rotateZ(90deg);
+    }
+    .filter-btn {
+        margin: 0 10px 10px 0;
+        font-weight: bold;
+    }
+    .frameOpt {
+        height: auto;
+    }
+}

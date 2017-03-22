@@ -1,0 +1,292 @@
+.drop-menu {
+    /* max-width: 600px;*/
+    width: 100%;
+    position: absolute;
+    z-index: 7;
+    background-color: #dcdcdc;
+    left: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+    ul {
+        overflow-y: scroll;
+    }
+}
+
+.nav-menu {
+    left: 0;
+    top: 0;
+    height: 660px;
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        /* overflow-y: scroll;*/
+    }
+}
+
+.buy-menu {
+    right: 0;
+    top: 0;
+    left: inherit;
+    height: 660px;
+    ul {
+        height: 70%;
+    }
+}
+
+.search {
+    align-self: flex-end;
+    position: relative;
+}
+
+.search-opt {
+    height: 42px;
+    padding: 0 15px;
+    font-family: $medium;
+    font-size: 16px;
+}
+
+.submit-opt {
+    height: 42px;
+    border: none;
+}
+
+.btn-opt {
+    background-color: #000;
+    border: none;
+    width: 46px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.menu-link {
+    font-size: 22px;
+    font-family: $medium;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+    padding: 22px 0;
+}
+
+.list-item {
+    background-color: #fff;
+    margin: 1px 0;
+    ul {
+        overflow: inherit;
+    }
+}
+
+.navigation {
+    position: relative;
+}
+
+.head {
+    height: 45px;
+    background-color: #000;
+    /* display: flex;*/
+}
+
+.head-name {
+    color: #fff;
+    font-size: 20px;
+    padding: 11px 0;
+}
+
+.search-icon {
+    position: absolute;
+    right: 0;
+}
+
+.icon-opt {
+    position: absolute;
+    right: 24px;
+    top: 19px;
+}
+
+.buy-name-head {
+    margin: 0 25px;
+}
+
+.buy-items {
+    display: flex;
+    background-color: #fff;
+    height: 118px;
+    margin-bottom: 2px;
+    img {
+        height: auto;
+        width: 65px;
+    }
+}
+
+.name-product {
+    font-family: $semi-bold;
+    font-size: 16px;
+}
+
+.sold-info {
+    width: 245px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    width: 23px;
+    height: 22px;
+}
+
+.squer-count {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000;
+    font-family: $semi-bold;
+    font-size: 28px;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.count-buy {
+    display: flex;
+    margin-top: 10px;
+    width: 90px;
+    justify-content: space-between;
+}
+
+.count-items {
+    display: block;
+    width: 36px;
+    height: 20px;
+    background-color: #b1b1b1;
+    font-family: $regular;
+    font-size: 18px;
+    text-align: center;
+}
+
+.coast-item {
+    display: flex;
+    align-self: flex-end;
+    margin: 15px 0;
+    .coast {
+        font-size: 22px;
+        font-family: $regular;
+        font-weight: normal;
+    }
+}
+
+.total-sale {
+    display: flex;
+    margin-left: 15px;
+    justify-content: space-around;
+    div {
+        align-self: center;
+    }
+    p {
+        text-transform: uppercase;
+        font-family: $semi-bold;
+        font-size: 22px;
+    }
+}
+
+.functional {
+    height: 100px;
+    display: flex;
+    font-family: $head-bold;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.func-btn {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.continue-btn {
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    color: rgb(179, 179, 179);
+}
+
+.checkout-btn {
+    width: 60%;
+    height: 100%;
+    background-color: #000;
+    text-align: left;
+    padding-left: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.continue-buy:after {
+    transform: rotate(-20deg);
+    content: '\232A';
+    font-size: 20px;
+    display: block;
+    position: relative;
+    top: -2px;
+}
+
+.continue-buy {
+    margin-left: 10px;
+}
+
+.akkardeon-item {
+    background-color: #000;
+    margin: 1px 0;
+    .menu-link {
+        color: #fff;
+    }
+}
+
+
+/*Accordion*/
+
+.auroramenu-default {
+    a {
+        color: #000;
+        background-color: inherit;
+        padding-left: 0;
+    }
+    a:hover {
+        background-color: inherit;
+    }
+}
+
+.auroramenu-default > li > a:after {
+    content: '+';
+    font-size: 30px;
+}
+
+.auroramenu-default > li > a.open:after {
+    content: '\2014';
+    font-size: 30px;
+}
+
+.auroramenu-default ul a {
+    font-size: 22px;
+}
+
+.auroramenu-default {
+    ul {
+        a {
+            background-color: inherit;
+            padding-left: 0;
+        }
+    }
+}
+
+.auroramenu-default > li > a {
+    border: none;
+}

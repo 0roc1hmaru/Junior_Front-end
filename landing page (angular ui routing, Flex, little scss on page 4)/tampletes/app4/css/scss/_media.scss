@@ -1,0 +1,130 @@
+@media(min-width:1440px) {
+    .wrappert-nav {
+        width: 60%;
+    }
+}
+
+@media(max-width:1069px) {
+    .Robert {
+        right: 0;
+    }
+}
+
+@media(max-width:991px) {
+    .name-sec {
+        width: 100%;
+    }
+    .main {
+        padding: 0;
+    }
+    .wrapper-aside-left {
+        max-width: inherit;
+    }
+    .wrapper-aside-right {
+        margin: 20px 15px;
+        width: 100%;
+    }
+    .wrapper-news-space {
+        justify-content: space-around;
+    }
+    .body-transform,
+    .banner {
+        align-self: center;
+    }
+    .local-event {
+        margin: 25px 0 0 0;
+    }
+    .statistick {
+        justify-content: center;
+    }
+    /* .event {
+        align-items: center;
+    }*/
+    .wrapper-information {
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:850px) {
+    .second-slider,
+    .Robert {
+        display: none;
+    }
+    .first-slider {
+        margin: auto;
+    }
+    .slider-3 {
+        width: 90%;
+        margin: auto;
+    }
+    .head-text-third,
+    .head-text-forth,
+    .head-text-second {
+        text-align: center;
+    }
+}
+
+@media(max-width:767px) {
+    .wrapper-information {
+        width: 100%;
+    }
+    .wrapper-news-space {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper-aside-left {
+        margin: 20px 10px;
+    }
+    .second-slider {
+        display: none;
+    }
+    .banner {
+        a {
+            height: 61px;
+            width: inherit;
+            padding: 0 20px;
+        }
+    }
+}
+
+@media(max-width:550px) {
+    .slider-3 {
+        width: 75%;
+    }
+    .challenge-block {
+        flex-direction: column;
+    }
+    .logo_main {
+        width: 95%;
+        margin: 25px auto 0;
+        display: block;
+    }
+    .people-info-lost {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider-five {
+        width: 320px;
+        overflow: hidden;
+    }
+    .slide-lbs {
+        padding: 50px 5px 10px;
+    }
+    .wrapper-aside-right {
+        margin: 20px 0px;
+    }
+    .slide-lbs p {
+        font-size: 14px;
+    }
+    .slide-weight p {
+        font-size: 10px;
+    }
+    .slide-lbs .slider-5 {
+        width: 40%;
+    }
+    .click-link-color {
+        text-align: center;
+    }
+}

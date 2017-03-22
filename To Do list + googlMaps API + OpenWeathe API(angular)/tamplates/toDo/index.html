@@ -1,0 +1,49 @@
+<main class="view" ng-controller="MyList">
+    <section class="to-do-list">
+        <div class="filter">
+            <input type="button" class="btn btn-default filter-btn" ng-click="listTask.done = ''" value="all">
+            <input type="button" class="btn btn-default filter-btn" ng-click="listTask.done = true" value="done">
+            <input type="button" class="btn btn-default filter-btn" ng-click="listTask.done = false" value="active">
+            <input type="text" class="form-control filter-search" ng-model="filter" placeholder="search">
+        </div>
+        <div ng-repeat="x in listTask | filter:listTask.done | filter:filter track by $index" class="view-task done-{{x.done}}">
+            <input class="checkbox cheked-pos" ng-click='isChecked()' type="checkbox" ng-model="x.done">
+            <div class="text-info">
+                <p class="title" ng-bind="x.nameTask"></p>
+                <p class="date-opt" ng-bind="x.periodTask"></p>
+                <p class="task-info" ng-bind="x.taskInfo"></p>
+                <a href="mailto:" ng-bind="x.emailTask" class="mail-opt"></a>
+            </div>
+        </div>
+    </section>
+
+    <aside class="right">
+        <div class="wrapper">
+            <form class="form-view" ng-submit="todoAdd()">
+                <label for="name-task">Name task: </label>
+                <input class="form-control write-view name-task" type="text" placeholder="What we must do?" ng-model="nameTask" required>
+
+                <lable for="time-to-task">Time Period: </lable>
+                <input type="datetime" class="form-control write-view time-to-task" placeholder="What time we have" ng-model='periodTask' required>
+
+                <lable for="time-to-task">Task: </lable>
+                <textarea class="form-control write-view time-to-task" placeholder="Info about task..." name="" id="" cols="30" rows="3" ng-model="taskInfo" required></textarea>
+
+                <lable for="task-email">Email: </lable>
+                <input type="email" class="form-control write-view" placeholder="Your email..." ng-model='emailTask' required>
+
+                <input type="submit" class="btn btn-sent">
+            </form>
+            <div class="buttons-opt">
+                <button class="btn remove" ng-click="remove()">Remove</button>
+                <a ui-sref="todo.addition" class="btn btn-info">Show Clock:</a>
+                <div ui-view></div>
+            </div>
+
+        </div>
+    </aside>
+</main>
+
+<!--
+</body>
+</html>-->

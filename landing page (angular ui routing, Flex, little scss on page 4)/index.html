@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="tampletes/app4/slick/slick.css">
+    <link rel="stylesheet" href="tampletes/app4/slick/slick-theme.css">
+    <link rel="stylesheet" href="tampletes/app4/css/style.css">
+
+    <title>TheNewGeneration AltexSoft</title>
+
+    <script src="script/angular.min.js"></script>
+    <script src="script/angular-ui-router.min.js"></script>
+    <script src="script/modelApp.js"></script>
+    <script src="script/routings/routing.js"></script>
+    <script src="script/controllers/home.js"></script>
+    <script src="script/controllers/app3Ctrl.js"></script>
+    <script src="script/controllers/app4Ctrl.js"></script>
+
+
+</head>
+
+<body ng-controller="RoutCtrl">
+    <header class="header">
+        <div class="wrapper-center">
+            <a href="#" class="logo-link"><img src="image/logo.png" alt="" class="logo"></a>
+            <div class="head-right">
+                <ul class="heder-list">
+                    <li class="head-item">
+                        <a href="#" class="head-link" content>HOW IT WORK</a>
+                    </li>
+                    <li class="head-item">
+                        <a href="#" class="head-link">NEW TO VISALUS?</a>
+                    </li>
+                    <li class="head-item">
+                        <a href="#" class="head-link">MEET ROBERT L. DEAN, JR.</a>
+                    </li>
+                    <li class="head-item">
+                        <a href="#" class="head-link">SIGN IN</a>
+                    </li>
+                </ul>
+                <div class="challenge-block">
+                    <a href="#" class="question">Why Weigh More?</a>
+                    <a href="#" class="link-challenge btn-link">Start Challenge</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="wrappert-nav">
+                <li><a ui-sref="home" class="nav-item">Page 3</a></li>
+                <li><a ui-sref="event" class="nav-item">Page 4</a></li>
+                <li class="drop-item"><a href="" class="nav-item">ABOUT TNG</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="">Overview</a>
+                        </li>
+                        <li>
+                            <a href="">About Robert L. Dean</a>
+                        </li>
+                        <li>
+                            <a href="">Getting Started</a>
+                        </li>
+                        <li>
+                            <a href="">About Visalus</a>
+                        </li>
+                        <li>
+                            <a href="">Enroll in Visalus</a>
+                        </li>
+                        <li>
+                            <a href="">Questions?</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">OPPORTUNITY</a></li>
+                <li><a href="#" class="nav-item">EVENTS</a></li>
+                <li><a href="#" class="nav-item modyfy">SIGN UP</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper-center">
+            <ul class="lower-info">
+                <li class="head-item">
+                    <a href="#" class="under-nav">Home</a>
+                </li>
+                <li class="head-item">
+                    <a href="#" class="under-nav">About The New Generation </a>
+                </li>
+                <li class="head-item">
+                    <a href="#" class="under-nav">Meet Robery L. Dean, Jr.</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div ui-view class="bg-image"></div>
+
+    <footer class="footer">
+        <div class="wrapper-foot">
+            <ul class="footer-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">90 Day Challenge</a>
+                </li>
+                <li>
+                    <a href="#">About TNG</a>
+                </li>
+                <li>
+                    <a href="#">Results</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">Join the Challenge</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+            <p>© 2010 TOPGUN NEW GENERATION. A Robert L. Dean, Jr. Company. All Rights Reserved. A Visalus Independate Distributor. #0101010</p>
+        </div>
+    </footer>
+
+    <script src="tampletes/app4/script/jquery.min.js"></script>
+    <script src="tampletes/app4/slick/slick.js"></script>
+    <script src="tampletes/app4/script/script.js"></script>
+    <!-- <script src="tampletes/app4/script/sliders.js"></script>-->
+    <script src="script/servises/app4Servise.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+.header {}
+
+.hamburger {
+    line-height: 45px;
+    border: 0;
+    position: absolute;
+    right: 10px;
+    top: 29%;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: rgb(70, 70, 70);
+    background: none;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.logo {
+    padding: 30px 0;
+    width: auto;
+}
+
+.wrapper-slider {
+    background-color: $bg-slider;
+    height: 85vh;
+    min-height: 420px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-section {
+    align-self: center;
+}
+
+.slide {
+    text-align: center;
+    color: $color-text-slider;
+    overflow: hidden;
+    .head-text-main {
+        color: $color-text-slider;
+        font-size: 72px;
+        letter-spacing: 10px;
+        border: none;
+    }
+    p {
+        font-family: $font-head;
+        text-transform: uppercase;
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+}
+
+.scroll-down {
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.logo-and-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pushy {
+    font-family: $font-head;
+    font-size: 18px;
+    a {
+        padding: 15px 45px;
+    }
+}
+.slider {
+    max-width: 956px;
+    width: 100%;
+}
